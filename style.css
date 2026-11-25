@@ -84,3 +84,36 @@
 @media(max-width:800px){.header{margin-top:12px;padding:10px 14px;gap:8px}.header .brand{font-size:clamp(17px,4vw,21px)}.header .brand-symbol{width:33px;height:33px}.header .menu{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;padding:0;border:1px solid var(--line);flex-shrink:0}.header nav{display:none;position:absolute;top:calc(100% + 9px);left:0;right:0;z-index:30;background:var(--paper);padding:12px 18px;border:1px solid var(--line);border-radius:22px;box-shadow:0 10px 20px #0001;flex-direction:column;align-items:stretch;gap:4px}.header nav.open{display:flex}.header nav a{padding:10px 4px}.header nav a::after{display:none}.stage-grid .stage{min-height:220px;padding-bottom:20px}}
 @media(max-width:380px){.header.wrap{width:calc(100% - 24px)}.header .brand-symbol{width:29px;height:29px}.header .brand{font-size:17px;gap:6px}.header .menu{width:38px;height:38px}}
 @media(prefers-reduced-motion:reduce){.js .stage-grid .stage.reveal.visible{animation:none!important}.stage-grid .stage:hover,.stage-grid .stage:hover>svg{transform:none!important}}
+
+/* V7 — cabeçalho flutuante sobre a hero no desktop */
+@media (min-width:801px){
+  html{scroll-padding-top:100px}
+  .header.wrap{
+    position:fixed;
+    top:14px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index:50;
+    background:rgba(255,249,237,.88);
+    -webkit-backdrop-filter:blur(16px);
+    backdrop-filter:blur(16px);
+    box-shadow:0 5px 24px rgba(48,39,53,.07);
+  }
+  /* O header sai do fluxo: somente o respiro necessário para o texto. */
+  .hero-shell .hero{
+    padding-block:90px 0;
+    align-items:center;
+  }
+  .hero-shell .hero-copy{
+    padding:0 0 70px;
+    align-self:center;
+  }
+  .hero-shell .hero-art{
+    align-self:end;
+  }
+}
+@media (min-width:801px) and (max-width:1000px){
+  .hero-shell .hero{padding-top:88px}
+  .hero-shell .hero-copy{padding-bottom:58px}
+}

@@ -1,0 +1,49 @@
+/* Identidade cromática amostrada da captura de Instagram fornecida em 25/11/2026.
+   Tons escuros e claros derivados para contraste; não é um manual oficial de marca. */
+:root{
+  --brand-magenta:#af4671;
+  --brand-turquoise:#1ed5c3;
+  --brand-yellow:#feda6c;
+  --brand-blue:#5272fb;
+  --brand-coral:#fa9184;
+  --brand-mint:#68c4af;
+  --brand-sky:#60baca;
+  --bg:#fff9ed;
+  --paper:#fffdfa;
+  --ink:#302735;
+  --muted:#665663;
+  --green:var(--brand-magenta); /* token primário legado */
+  --sage:#d5f5ec;
+  --rose:#88355a;
+  --line:#ead8d4;
+  --primary-hover:#873355;
+  --focus:#354cc8;
+  --dot:var(--brand-turquoise);
+  --shape:var(--brand-turquoise);
+  --portrait:#f5dce6;
+  --ornament:var(--brand-magenta);
+  --ornament-dot:var(--brand-blue);
+  --rating:#926208;
+  --section:#fffdfa;
+  --stage-one:#fbd4ce;
+  --stage-two:#feda6c;
+  --stage-three:#a6eadd;
+  --stage-four:#dce3ff;
+  --stage-ink:#40333e;
+  --stage-border:#63525c70;
+  --about-bg:#f5dce6;
+  --photo-tag:#fff9edf5;
+  --process:#e1f6f1;
+  --process-border:#9ac9be;
+  --gallery:#c8ece5;
+  --review:#f9e2e9;
+  --review-border:#d4a7b9;
+  --on-primary:#fffdf8;
+  --on-primary-soft:#fff1b8;
+  --on-primary-text:#fff6f7;
+  --light-hover:#feda6c;
+  --outline-hover:#873355;
+  --footer:#f8ecdf;
+  --allo:Allo,'DM Sans',Arial,sans-serif;
+  --body:'DM Sans',Arial,sans-serif;
+}
